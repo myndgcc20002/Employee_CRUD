@@ -25,7 +25,7 @@ function insertRecord(req, res) {
 
     login.save((err, doc) => {
         if (!err) {
-            res.redirect('order/list');
+            res.redirect('orders/list');
         } else {
             if (err.name == "ValidationError") {
                 handleValidationError(err, req.body);
@@ -56,10 +56,6 @@ function handleValidationError(err, body) {
             case 'ID':
                 body['IDError'] = err.errors[field].message;
                 break;
-
-                // case 'Password':
-                //     body['Password'] = err.errors[field].message;
-                //     break;
 
             default:
                 break;

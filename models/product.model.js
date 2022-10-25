@@ -16,10 +16,6 @@ var productSchema = new mongoose.Schema({
         type: String,
         required: 'This field is required'
     },
-    Img: {
-        type: String,
-        required: 'This field is required'
-    },
     Description: {
         type: String
     }

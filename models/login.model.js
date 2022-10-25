@@ -6,8 +6,7 @@ var loginSchema = new mongoose.Schema({
         required: 'This field is required'
     },
     Password: {
-        type: String,
-        required: 'This field is required'
+        type: String
     },
     accessTime: {
         type: Date,
