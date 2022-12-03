@@ -1,25 +1,24 @@
 const mongoose = require('mongoose');
 
 var productSchema = new mongoose.Schema({
-    ID: {
+    proID: {
         type: String,
-        required: 'This field is required'
+        required: 'Enter ID of Product, Please!'
     },
-    NameProduct: {
+    proName: {
         type: String,
-        required: 'This field is required'
+        required: 'Enter Name of Product, Please!'
     },
-    Category: {
+    proPrice: {
+        type: String,
+        required: 'Enter Price of Product, Please!'
+    },
+    proType: {
         type: String
     },
-    Origin: {
-        type: String,
-        required: 'This field is required'
-    },
-    Description: {
+    proDescription: {
         type: String
     }
 })
-
 
 mongoose.model('Product', productSchema);

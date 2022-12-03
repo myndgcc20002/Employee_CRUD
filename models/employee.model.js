@@ -1,28 +1,28 @@
 const mongoose = require('mongoose');
-var validator = require("email-validator");
 
 var employeeSchema = new mongoose.Schema({
-    Name: {
+    fullName: {
+        type: String,
+        required: 'Enter Full Name, Please!'
+    },
+    phone: {
         type: String
     },
-    Birth: {
+    birth: {
         type: String
     },
-    Email: {
+    position: {
         type: String
     },
-    NumberPhone: {
-        type: String
+    userName: {
+        type: String,
+        required: 'Enter User Name, Please!'
     },
-    Address: {
-        type: String
+    password: {
+        type: String,
+        required: 'Enter Password, Please!'
     }
+
 })
-
-// custom validation for email
-
-employeeSchema.path('Email').validate((val) => {
-    return validator.validate(val);
-}, 'Invalid Email');
 
 mongoose.model('Employee', employeeSchema);

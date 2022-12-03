@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
 
 var loginSchema = new mongoose.Schema({
-    ID: {
-        type: String,
-        required: 'This field is required'
-    },
-    Password: {
+    loginUser: {
         type: String
     },
-    accessTime: {
+    loginPass: {
+        type: String,
+    },
+    loginDate: {
         type: Date,
         default: Date.now()
     }

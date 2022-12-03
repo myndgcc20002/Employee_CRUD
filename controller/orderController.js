@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Orders = mongoose.model('Orders');
+const Order = mongoose.model('Order');
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("orders/addOrEditOrders", {
+    res.render("order/addOrEditOrder", {
         viewTitle: "Order Insert"
     })
 })
@@ -19,19 +19,22 @@ router.post("/", (req, res) => {
 })
 
 function insertRecord(req, res) {
-    var orders = new Orders();
-    orders.Quantity = req.body.Quantity;
-    orders.Total = req.body.Total;
+    var order = new Order();
+    order.ordID = req.body.ordID;
+    order.ordProduct = req.body.ordProduct;
+    order.ordQuantity = req.body.ordQuantity;
+    order.ordTotal = req.body.ordTotal;
+    order.ordDate = req.body.ordDate;
 
-    orders.save((err, doc) => {
+    order.save((err, doc) => {
         if (!err) {
-            res.redirect('orders/list');
+            res.redirect('order/list');
         } else {
             if (err.name == "ValidationError") {
                 handleValidationError(err, req.body);
-                res.render("orders/addOrEditOrders", {
-                    viewTitle: "Orders Insert",
-                    orders: req.body
+                res.render("order/addOrEditOrder", {
+                    viewTitle: "Order Insert",
+                    order: req.body
                 })
             }
             console.log("Error occured during record insertion" + err);
@@ -40,9 +43,9 @@ function insertRecord(req, res) {
 }
 
 router.get('/list', (req, res) => {
-    Orders.find((err, docs) => {
+    Order.find((err, docs) => {
         if (!err) {
-            res.render("orders/list", {
+            res.render("order/list", {
                 list: docs
             })
         }
@@ -53,12 +56,8 @@ router.get('/list', (req, res) => {
 function handleValidationError(err, body) {
     for (field in err.errors) {
         switch (err.errors[field].path) {
-            case 'Quantity':
-                body['QuantityError'] = err.errors[field].message;
-                break;
-
-            case 'Total':
-                body['TotalError'] = err.errors[field].message;
+            case 'ordProduct':
+                body['ordProductError'] = err.errors[field].message;
                 break;
 
             default:

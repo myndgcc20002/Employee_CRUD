@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <title>ATN Store</title>
-        <style>
-            html,body{
-                height:100%;
-            }
-        </style>
-    </head>
-    <body class="bg-info">
-        <div class="row h-100 align-items-center">
-            <div style="margin-left:220px;margin-right:220px;background-color:rgb(183 220 238);margin-top:15px;padding:20px" class="col-md-8 offset-md-3">
-                {{> header}}
-            </div>
-        </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Linker</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
 
-        <div class="row h-100 align-items-center">
-            <div style="margin-left:330px;background-color:white;margin-top:15px;padding:20px" class="col-md-6 offset-md-3">
-                {{{body}}}
-            </div>
+<body class="bg-info">
+    <div class="align-items-center">
+        <div style="margin-left:3%;margin-right:3%;background-color:white;margin-top:3%;padding:3%" class="col-md-6 offset-md-3">
+            <center>
+            {{{body}}}
+            </center>
         </div>
+    </div>
+</body>
 
-        <div class="row h-100 align-items-center">
-            <div style="margin-left:220px;margin-right:220px;background-color:rgb(183 220 238);margin-top:15px;padding:20px" class="col-md-8 offset-md-3">
-                {{> footer}}
-            </div>
-       
-         
-    </body>
 </html>

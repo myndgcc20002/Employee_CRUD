@@ -5,8 +5,8 @@ const Login = mongoose.model('Login');
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("login/login", {
-        viewTitle: "Login Employee"
+    res.render("login/bossLogin", {
+        viewTitle: "Hello Boss!"
     })
 })
 
@@ -31,12 +31,12 @@ function loginHistory(req, res) {
 
     login.save((err, doc) => {
         if (!err) {
-            res.redirect('table/list');
+            res.redirect('employee/list');
         } else {
             if (err.name == "ValidationError") {
                 handleValidationError(err, req.body);
-                res.render("login/Login", {
-                    viewTitle: "Login Employee",
+                res.render("login/bossLogin", {
+                    viewTitle: "Hello Boss!",
                     login: req.body
                 })
             }
@@ -56,8 +56,12 @@ router.get('/list', (req, res) => {
 })
 
 router.get('/bossLogin', (req, res) => {
-    res.render("login/bossLogin", {
-        viewTitle: "Hello Boss! "
+    res.render("login/bossLogin")
+})
+
+router.get('/login', (req, res) => {
+    res.render("/login", {
+        viewTitle: "Login Employee "
     })
 })
 

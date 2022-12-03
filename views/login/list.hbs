@@ -1,40 +1,24 @@
 <h3>
-     <p>Login History</p>
-     
-    <a href="/login" class="btn btn-info">
-        <i class="fas fa-sign-out-alt"> </i> Log out
+    <a href="/employee" class="btn btn-danger">
+        <i class="fa fa-plus"> </i> manager
     </a>
-
-    <a href="/employee/list" class="btn btn-danger">
-        <i class="fas fa-users"> </i> List Employee
-    </a>
-   
-     <a href="/product/list" class="btn btn-primary">
-        <i class="fas fa-list"> </i> List Product
-    </a>
-
-    <a href="/orders/list" class="btn btn-success">
-        <i class="fas fa-shopping-cart"></i> List Order
-    </a>
-    
+    Login History
 </h3>
-
 <table class="table table-striped">
-
     <thead>
         <tr>
-            <th>ID</th>
+            <th>UserName</th>
             <th>Password</th>
-            <th>Time</th>
+            <th>Date</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         {{#each list}}
         <tr>
-            <td>{{this.ID}}</td>
-            <td>********</td>
-            <td>{{this.accessTime}}</td>
+            <td>{{this.loginUser}}</td>
+            <td>******</td>
+            <td>{{this.loginDate}}</td>
         </tr>
         {{/each}}
     </tbody>

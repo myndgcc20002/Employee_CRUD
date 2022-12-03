@@ -19,11 +19,12 @@ router.post("/", (req, res) => {
 
 function insertRecord(req, res) {
     var employee = new Employee();
-    employee.Name = req.body.Name;
-    employee.Birth = req.body.Birth;;
-    employee.Email = req.body.Email;
-    employee.NumberPhone = req.body.NumberPhone;
-    employee.Address = req.body.Address;
+    employee.fullName = req.body.fullName;
+    employee.phone = req.body.phone;
+    employee.birth = req.body.birth;
+    employee.position = req.body.position;
+    employee.userName = req.body.userName;
+    employee.password = req.body.password;
 
     employee.save((err, doc) => {
         if (!err) {
@@ -93,8 +94,16 @@ router.get('/delete/:id', (req, res) => {
 function handleValidationError(err, body) {
     for (field in err.errors) {
         switch (err.errors[field].path) {
-            case 'Email':
-                body['EmailError'] = err.errors[field].message;
+            case 'fullName':
+                body['fullNameError'] = err.errors[field].message;
+                break;
+
+            case 'userName':
+                body['userNameError'] = err.errors[field].message;
+                break;
+
+            case 'password':
+                body['passwordError'] = err.errors[field].message;
                 break;
 
             default:

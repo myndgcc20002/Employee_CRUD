@@ -1,40 +1,33 @@
-<h3>
-     <p>Employee List</p>
-    <a href="/employee" class="btn btn-danger">
-        <i class="fas fa-user-plus"> </i> New Employee
-    </a>
-   
-     <a href="/product/list" class="btn btn-primary">
-        <i class="fas fa-list"> </i> List Product
-    </a>
-
-    <a href="/orders/list" class="btn btn-success">
-        <i class="fas fa-shopping-cart"></i> List Order
-    </a>
-    
-    <a href="/login" class="btn btn-info">
-        <i class="fas fa-sign-out-alt"> </i> Log out
-    </a>
-</h3>
+<h2> Employee List</h2>
+<h4>
+    <a href="/employee" class="btn btn-primary">
+        <i class="fa fa-plus"> </i> Create New
+    </a> 
+    <a href="/product/list" class="btn btn-info"> List Product</a>
+    <a href="/order/list" class="btn btn-success"> List Order</a>
+    <a href="/table/list" class="btn btn-warning"> List Table</a>
+    <a href="/login/list" class="btn btn-danger"> Login History</a>
+    <a href="/login" class="btn btn-secondary"> Logout</a>
+</h4>
 <table class="table table-striped">
     <thead>
         <tr>
             <th>Full Name</th>
+            <th>Phone</th>
             <th>Birth</th>
-            <th>Email</th>
-            <th>Number Phone</th>
-            <th>Address</th>
+            <th>Position</th>
+            <th>UserName</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         {{#each list}}
         <tr>
-            <td>{{this.Name}}</td>
-            <td>{{this.Birth}}</td>
-            <td>{{this.Email}}</td>
-            <td>{{this.NumberPhone}}</td>
-            <td>{{this.Address}}</td>
+            <td>{{this.fullName}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.birth}}</td>
+            <td>{{this.position}}</td>
+            <td>{{this.userName}}</td>
             <td>
                 <a href="/employee/{{this._id}}">
                     <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
@@ -48,8 +41,5 @@
             </td>
         </tr>
         {{/each}}
-
-        <div>
-    </div>
     </tbody>
 </table>

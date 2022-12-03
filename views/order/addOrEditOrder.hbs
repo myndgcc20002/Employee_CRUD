@@ -1,0 +1,39 @@
+<h3>{{viewTitle}}</h3>
+<form action="/order" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{order._id}}">
+
+    <div class="form-group">
+        <div class="col-sm-6">
+            <label>Order ID</label>
+            <input type="text" class="form-control" name="ordID" value="{{order.ordID}}" placeholder="ID">
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Product</label>
+            <input type="text" class="form-control" name="ordProduct" value="{{order.ordProduct}}" placeholder="Product">
+            <div class="text-danger">  {{order.ordProductError}}  </div>
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Quantity</label>
+            <input type="text" class="form-control" name="ordQuantity" value="{{order.ordQuantity}}" placeholder="Quantity">
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Total</label>
+            <input type="text" class="form-control" name="ordTotal" value="{{order.ordTotal}}" placeholder="Total">
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a href="/order/list" class="btn btn-danger">
+            <i class="fas fa-th-list"></i> View All </a>
+        </div>
+    </div>
+
+    </div>    
+</form>

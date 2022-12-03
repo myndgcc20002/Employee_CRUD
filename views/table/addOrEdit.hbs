@@ -1,0 +1,81 @@
+<h3>{{viewTitle}}</h3>
+<form action="/table" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{table._id}}">
+
+    <div class="form-group">
+        <div class="col-sm-12">
+            <label>ID Bàn: 1</label>
+            <label></label>
+        </div>
+
+        <div class="col-sm-5">
+            <label>Thông Báo</label>
+            <select type="text" class="form-control" name="tabNoti" value="{{table.tabNoti}}"
+                placeholder="Notification">
+                <option value="Support">Cần Hỗ Trợ</option>
+                <option value="0">Đã Hỗ Trợ</option>
+            </select>
+            <label></label>
+        </div>
+
+        <div class="col-sm-5">
+            <label>Trạng Thái</label>
+            <select type="text" class="form-control" name="tabStatus" value="{{table.tabStatus}}" placeholder="Status">
+                <option value="Unpaid">Chưa Thanh Toán</option>
+                <option value="Paid">Đã Thanh Toán</option>
+            </select>
+            <label></label>
+        </div>
+
+        <div class="col-sm-12">
+            <label>Hóa Đơn</label>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên Món</th>
+                        <th>Giá (VND)</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>Cà Phê Sữa</th>
+                        <th>20.000 VND</th>
+                        <th>2</th>
+                        <th>40.000 VND</th>
+                    </tr>
+
+                    <tr>
+                        <th>2</th>
+                        <th>Cà Phê Đen</th>
+                        <th>15.000 VND</th>
+                        <th>1</th>
+                        <th>15.000 VND</th>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-sm-8">
+            <label></label>
+        </div>
+
+        <div class="col-sm-4">
+            <label>Tổng tiền: 55.000 VND</label>
+        </div>
+
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-info"> Submit</button>
+            <a href="/table/list" class="btn btn-danger"> View All </a>
+
+        </div>
+    </div>
+
+    </div>
+</form>

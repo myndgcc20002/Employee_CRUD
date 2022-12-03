@@ -4,7 +4,7 @@ const Product = mongoose.model('Product');
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("product/addOrEditProduct", {
+    res.render("product/addOrEdit", {
         viewTitle: "Insert Product"
     })
 })
@@ -19,11 +19,11 @@ router.post("/", (req, res) => {
 
 function insertRecord(req, res) {
     var product = new Product();
-    product.ID = req.body.ID;
-    product.NameProduct = req.body.NameProduct;
-    product.Category = req.body.Category;
-    product.Origin = req.body.Origin;
-    product.Description = req.body.Description;
+    product.proID = req.body.proID;
+    // product.proName = req.body.proName;
+    // product.proPrice = req.body.proPrice;
+    product.proType = req.body.proType;
+    product.proDescription = req.body.proDescription;
 
     product.save((err, doc) => {
         if (!err) {
@@ -31,8 +31,8 @@ function insertRecord(req, res) {
         } else {
             if (err.name == "ValidationError") {
                 handleValidationError(err, req.body);
-                res.render("product/addOrEditProduct", {
-                    viewTitle: "Insert Product",
+                res.render("product/addOrEdit", {
+                    viewTitle: "Insert product",
                     product: req.body
                 })
             }
@@ -48,7 +48,7 @@ function updateRecord(req, res) {
         } else {
             if (err.name == "ValidationError") {
                 handleValidationError(err, req.body);
-                res.render("product/addOrEditProduct", {
+                res.render("product/addOrEdit", {
                     viewTitle: 'Update Product',
                     product: req.body
                 });
@@ -72,7 +72,7 @@ router.get('/list', (req, res) => {
 router.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, doc) => {
         if (!err) {
-            res.render("product/addOrEditProduct", {
+            res.render("product/addOrEdit", {
                 viewTitle: "Update Product",
                 product: doc
             })
@@ -93,16 +93,16 @@ router.get('/delete/:id', (req, res) => {
 function handleValidationError(err, body) {
     for (field in err.errors) {
         switch (err.errors[field].path) {
-            case 'ID':
-                body['IDError'] = err.errors[field].message;
+            case 'proID':
+                body['proIDError'] = err.errors[field].message;
                 break;
 
-            case 'NameProduct':
-                body['NameProductError'] = err.errors[field].message;
+            case 'proName':
+                body['proNameError'] = err.errors[field].message;
                 break;
 
-            case 'Origin':
-                body['OriginError'] = err.errors[field].message;
+            case 'proPrice':
+                body['proPriceError'] = err.errors[field].message;
                 break;
 
             default:

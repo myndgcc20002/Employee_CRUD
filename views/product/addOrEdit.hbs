@@ -1,0 +1,57 @@
+<h3>{{viewTitle}}</h3>
+<form action="/product" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{product._id}}">
+
+    <div class="form-group">
+        <div class="col-sm-6">
+            <label>ID</label>
+            <input type="text" class="form-control" name="proID" value="{{product.proID}}" placeholder="Enter ID">
+            <div class="text-danger"> {{product.proIDError}} </div>
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Name</label>
+            <input type="text" class="form-control" name="proName" value="{{product.proName}}" placeholder="Enter Name">
+            <div class="text-danger"> {{product.proNameError}} </div>
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Price (Vnd)</label>
+            <input type="text" class="form-control" name="proPrice" value="{{product.proPrice}}" placeholder="Enter Price">
+            <div class="text-danger"> {{product.proPriceError}} </div>
+            <label></label>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Choose a Type</label>
+            <select type="text" class="form-control" name="proType" value="{{product.proType}}" placeholder="Enter Type">
+                <option value="Drink">Drink</option>
+                <option value="Food">Food</option>
+                <option value="Other">Other</option>
+            </select>
+            <label></label>
+        </div>
+        </div>
+
+        <div class="col-sm-12">
+            <label>Description</label>
+            <input type="text" class="form-control" name="proDescription" value="{{product.proDescription}}" placeholder="Enter Description">
+            <label></label>
+        </div>
+
+        <div class="col-sm-12">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a href="/product/list" class="btn btn-danger">
+            <i class="fas fa-list-alt"></i> View All
+        </a>
+        </div>
+
+    </div>
+
+   
+    
+
+    
+</form>
