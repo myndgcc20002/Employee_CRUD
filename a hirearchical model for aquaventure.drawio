@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2023-10-17T05:56:11.874Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="N_RXz8-eUTn4mUGNz0Jd" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-17T06:05:04.307Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="qjZm5c6KdxDY4fcGhbxL" version="22.0.4" type="github">
   <diagram name="Page-1" id="sCNcyB-uF5atUNPAql_w">
-    <mxGraphModel dx="1534" dy="1077" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1534" dy="677" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="c9mhnKl0yMy2buyReTvF-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;AquaVenture&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="383" y="25" width="131" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-2" value="   1.1 Hoặc động lặn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="13" y="136" width="131" height="49" as="geometry" />
+        <mxCell id="c9mhnKl0yMy2buyReTvF-2" value="1.1 Dive Activity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-177" y="122" width="321" height="63" as="geometry" />
         </mxCell>
         <mxCell id="c9mhnKl0yMy2buyReTvF-3" value="1.4 Thống kê và Phân Tích" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="552" y="136" width="131" height="49" as="geometry" />
@@ -22,31 +22,16 @@
         <mxCell id="c9mhnKl0yMy2buyReTvF-12" value="1.5 Tài khoản" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="721" y="139" width="131" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-13" value="1.1.1 Quản lý lặn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="c9mhnKl0yMy2buyReTvF-13" value="1.1.1 Dive Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-245" y="236" width="190" height="49" as="geometry" />
         </mxCell>
         <mxCell id="c9mhnKl0yMy2buyReTvF-18" value="1.1.1.1 Add activity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="-209" y="304" width="154" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="501.5" y="324" width="97" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-33" value="1.1.3.1&amp;nbsp;Định vị GPS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="634.5" y="324" width="97" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-34" value="1.1.3.2&amp;nbsp; Hiển thị bản đồ biển động" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="766.5" y="324" width="97" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-44" value="1.1.2 Theo dõi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="-265" y="98" width="190" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-45" value="1.1.2 Theo dõi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="8" y="-26" width="190" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-46" value="1.1.3 Bản đồ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="c9mhnKl0yMy2buyReTvF-46" value="1.1.3 Location and Maps" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="198" y="236" width="190" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-47" value="1.1.2 Theo dõi" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="c9mhnKl0yMy2buyReTvF-47" value="1.1.2. Dive Activity Tracking" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-24" y="234" width="190" height="49" as="geometry" />
         </mxCell>
         <mxCell id="c9mhnKl0yMy2buyReTvF-49" value="1.1.1.2 Edit activity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
@@ -73,17 +58,14 @@
         <mxCell id="c9mhnKl0yMy2buyReTvF-59" value="1.1.2.4 Display Remaining Air" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="12" y="505" width="154" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-60" value="1.1.2.1 Display current depth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
+        <mxCell id="c9mhnKl0yMy2buyReTvF-60" value="1.1.3.1 GPS Location" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="234" y="304" width="154" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-61" value="1.1.2.2 Display ascending time" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
+        <mxCell id="c9mhnKl0yMy2buyReTvF-61" value="1.1.3.2 Display Marine Maps" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="234" y="371" width="154" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-62" value="1.1.2.3&amp;nbsp; Display Ascent Time" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
-          <mxGeometry x="234" y="438" width="154" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="c9mhnKl0yMy2buyReTvF-63" value="1.1.2.4 Display Remaining Air" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;align=left;" vertex="1" parent="1">
-          <mxGeometry x="234" y="505" width="154" height="49" as="geometry" />
+        <mxCell id="c9mhnKl0yMy2buyReTvF-64" value="1.3 Location and Maps" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="420" y="239" width="190" height="49" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
